@@ -95,6 +95,10 @@ public class LinkedListClass<Key> {
 	
 	public LinkedListFunction<Key> removeNode(Key data) {
 		LinkedListFunction<Key> tempNode=headNode;
+=======
+	public int removeNode(Key data) {
+		LinkedListFunction<Key> tempNode=headNode;
+		int count=1;
 		while(tempNode!=null && tempNode.getNextNode()!=null) {
 			if ((tempNode.getNextNode().getKey()).equals(data)) {
 				System.out.println("Node containing "+data+" removed.");
@@ -103,5 +107,10 @@ public class LinkedListClass<Key> {
 			tempNode=tempNode.getNextNode();
 		}
 		return tempNode;
+=======
+			count++;
+			tempNode=tempNode.getNextNode();
+		}
+		return count;
 	}
 }

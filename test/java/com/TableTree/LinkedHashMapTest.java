@@ -30,6 +30,8 @@ public class LinkedHashMapTest {
 		//Showing Map after removal
 		System.out.println("New Map-");
 		//linkedHashMap.showMap();
+=======
+		linkedHashMap.showMap();
 	}
 	
 	
@@ -42,4 +44,5 @@ public class LinkedHashMapTest {
 	public void whenRemovedShouldShowKeyValueNull () {
 		assertNull(linkedHashMap.get("avoidable"));
 	}
+=======
 }

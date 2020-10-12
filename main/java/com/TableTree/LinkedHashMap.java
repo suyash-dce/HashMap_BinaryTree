@@ -14,6 +14,8 @@ public class LinkedHashMap<K,V> {
 	}
 	
 	//Function to find index for key
+=======
+	//Fuction to find index for key
 	private int getBucketIndex(K key) {
 		int hashCode = Math.abs(key.hashCode());
 		int index = hashCode%numBuckets;
@@ -63,6 +65,7 @@ public class LinkedHashMap<K,V> {
 		else return tempNode;
 	}
 	
+=======
 	public void showMap() {
 		for (LinkedListClass<K> linkedlist: bucketArray) {
 			linkedlist.showList();
