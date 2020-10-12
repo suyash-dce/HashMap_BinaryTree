@@ -22,6 +22,15 @@ public class LinkedHashMapTest {
         		value = value+1;
         	linkedHashMap.add(word,value);
         }
+		System.out.println("Original Map-");
+		//linkedHashMap.showMap();
+		
+		//Removing node containing avoidable
+		linkedHashMap.removeFromMap("avoidable");
+		//Showing Map after removal
+		System.out.println("New Map-");
+		//linkedHashMap.showMap();
+=======
 		linkedHashMap.showMap();
 	}
 	
@@ -30,4 +39,10 @@ public class LinkedHashMapTest {
 	public void whenAddedParagraphFrequencyOfParanoidIsThree() {
 		assertEquals(3,(int)linkedHashMap.get("paranoid"));
 	}
+	
+	@Test
+	public void whenRemovedShouldShowKeyValueNull () {
+		assertNull(linkedHashMap.get("avoidable"));
+	}
+=======
 }
